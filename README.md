@@ -1,1 +1,5 @@
-# asteroid_landings
+# Meteorite Landings 1940 - 1980
+### T. Datta, A. Desai, K. Lin - DS 4200
+
+## Description
+Before the establishment of the National Aeronautics and Space Administration (NASA), meteor landings were primarily observed using a combination of the naked eye, telescopes, and other simple techniques that did not require advanced technology. With NASA's formation in 1958, this changed significantly, as meteor landings began to be monitored through various technologies, including radar, satellites, and artificial intelligence. Technological advancements have enabled NASA to gather more accurate data points and information about meteor landings. In this project, our group aims to understand how known meteor landings differ before and after NASA's establishment. We seek to discover if and how advanced technologies have altered the observation and discovery of known meteor landings. This research not only highlights the evolution of technology in space science but also helps assess how advancements in data collection and observation have influenced the perceived frequency, distribution, and detection accuracy of meteor landings.
