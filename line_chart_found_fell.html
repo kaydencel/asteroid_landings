@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-05fb41d4ef772ddd6015b68f02c2a7fc"}, "mark": {"type": "line", "point": true}, "encoding": {"color": {"field": "Type", "type": "nominal"}, "x": {"axis": {"format": "d"}, "field": "year", "title": "Year", "type": "quantitative"}, "y": {"field": "Count", "title": "Number of Meteorites", "type": "quantitative"}}, "height": 400, "params": [{"name": "param_1", "bind": {"input": "select", "options": ["All", "Found", "Fell"], "name": "Select: "}, "value": "All"}], "title": "Meteorites Found vs Fell vs Total (1940\u20131980)", "transform": [{"filter": "((param_1 === 'All') || (datum.Type === param_1))"}], "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-05fb41d4ef772ddd6015b68f02c2a7fc": [{"year": 1940, "Type": "Found", "Count": 32}, {"year": 1941, "Type": "Found", "Count": 19}, {"year": 1942, "Type": "Found", "Count": 12}, {"year": 1943, "Type": "Found", "Count": 7}, {"year": 1944, "Type": "Found", "Count": 13}, {"year": 1945, "Type": "Found", "Count": 7}, {"year": 1946, "Type": "Found", "Count": 7}, {"year": 1947, "Type": "Found", "Count": 11}, {"year": 1948, "Type": "Found", "Count": 16}, {"year": 1949, "Type": "Found", "Count": 9}, {"year": 1950, "Type": "Found", "Count": 25}, {"year": 1951, "Type": "Found", "Count": 13}, {"year": 1952, "Type": "Found", "Count": 11}, {"year": 1953, "Type": "Found", "Count": 6}, {"year": 1954, "Type": "Found", "Count": 15}, {"year": 1955, "Type": "Found", "Count": 18}, {"year": 1956, "Type": "Found", "Count": 17}, {"year": 1957, "Type": "Found", "Count": 12}, {"year": 1958, "Type": "Found", "Count": 16}, {"year": 1959, "Type": "Found", "Count": 10}, {"year": 1960, "Type": "Found", "Count": 22}, {"year": 1961, "Type": "Found", "Count": 20}, {"year": 1962, "Type": "Found", "Count": 29}, {"year": 1963, "Type": "Found", "Count": 26}, {"year": 1964, "Type": "Found", "Count": 25}, {"year": 1965, "Type": "Found", "Count": 42}, {"year": 1966, "Type": "Found", "Count": 20}, {"year": 1967, "Type": "Found", "Count": 27}, {"year": 1968, "Type": "Found", "Count": 47}, {"year": 1969, "Type": "Found", "Count": 61}, {"year": 1970, "Type": "Found", "Count": 38}, {"year": 1971, "Type": "Found", "Count": 40}, {"year": 1972, "Type": "Found", "Count": 28}, {"year": 1973, "Type": "Found", "Count": 26}, {"year": 1974, "Type": "Found", "Count": 684}, {"year": 1975, "Type": "Found", "Count": 332}, {"year": 1976, "Type": "Found", "Count": 40}, {"year": 1977, "Type": "Found", "Count": 410}, {"year": 1978, "Type": "Found", "Count": 257}, {"year": 1979, "Type": "Found", "Count": 3043}, {"year": 1980, "Type": "Found", "Count": 137}, {"year": 1940, "Type": "Fell", "Count": 5}, {"year": 1941, "Type": "Fell", "Count": 4}, {"year": 1942, "Type": "Fell", "Count": 8}, {"year": 1943, "Type": "Fell", "Count": 3}, {"year": 1944, "Type": "Fell", "Count": 5}, {"year": 1945, "Type": "Fell", "Count": 4}, {"year": 1946, "Type": "Fell", "Count": 5}, {"year": 1947, "Type": "Fell", "Count": 6}, {"year": 1948, "Type": "Fell", "Count": 3}, {"year": 1949, "Type": "Fell", "Count": 12}, {"year": 1950, "Type": "Fell", "Count": 11}, {"year": 1951, "Type": "Fell", "Count": 6}, {"year": 1952, "Type": "Fell", "Count": 6}, {"year": 1953, "Type": "Fell", "Count": 3}, {"year": 1954, "Type": "Fell", "Count": 6}, {"year": 1955, "Type": "Fell", "Count": 4}, {"year": 1956, "Type": "Fell", "Count": 8}, {"year": 1957, "Type": "Fell", "Count": 6}, {"year": 1958, "Type": "Fell", "Count": 2}, {"year": 1959, "Type": "Fell", "Count": 6}, {"year": 1960, "Type": "Fell", "Count": 4}, {"year": 1961, "Type": "Fell", "Count": 7}, {"year": 1962, "Type": "Fell", "Count": 7}, {"year": 1963, "Type": "Fell", "Count": 7}, {"year": 1964, "Type": "Fell", "Count": 6}, {"year": 1965, "Type": "Fell", "Count": 4}, {"year": 1966, "Type": "Fell", "Count": 4}, {"year": 1967, "Type": "Fell", "Count": 7}, {"year": 1968, "Type": "Fell", "Count": 5}, {"year": 1969, "Type": "Fell", "Count": 6}, {"year": 1970, "Type": "Fell", "Count": 8}, {"year": 1971, "Type": "Fell", "Count": 7}, {"year": 1972, "Type": "Fell", "Count": 3}, {"year": 1973, "Type": "Fell", "Count": 3}, {"year": 1974, "Type": "Fell", "Count": 7}, {"year": 1975, "Type": "Fell", "Count": 4}, {"year": 1976, "Type": "Fell", "Count": 10}, {"year": 1977, "Type": "Fell", "Count": 10}, {"year": 1978, "Type": "Fell", "Count": 3}, {"year": 1979, "Type": "Fell", "Count": 2}, {"year": 1980, "Type": "Fell", "Count": 6}, {"year": 1940, "Type": "Total", "Count": 37}, {"year": 1941, "Type": "Total", "Count": 23}, {"year": 1942, "Type": "Total", "Count": 20}, {"year": 1943, "Type": "Total", "Count": 10}, {"year": 1944, "Type": "Total", "Count": 18}, {"year": 1945, "Type": "Total", "Count": 11}, {"year": 1946, "Type": "Total", "Count": 12}, {"year": 1947, "Type": "Total", "Count": 17}, {"year": 1948, "Type": "Total", "Count": 19}, {"year": 1949, "Type": "Total", "Count": 21}, {"year": 1950, "Type": "Total", "Count": 36}, {"year": 1951, "Type": "Total", "Count": 19}, {"year": 1952, "Type": "Total", "Count": 17}, {"year": 1953, "Type": "Total", "Count": 9}, {"year": 1954, "Type": "Total", "Count": 21}, {"year": 1955, "Type": "Total", "Count": 22}, {"year": 1956, "Type": "Total", "Count": 25}, {"year": 1957, "Type": "Total", "Count": 18}, {"year": 1958, "Type": "Total", "Count": 18}, {"year": 1959, "Type": "Total", "Count": 16}, {"year": 1960, "Type": "Total", "Count": 26}, {"year": 1961, "Type": "Total", "Count": 27}, {"year": 1962, "Type": "Total", "Count": 36}, {"year": 1963, "Type": "Total", "Count": 33}, {"year": 1964, "Type": "Total", "Count": 31}, {"year": 1965, "Type": "Total", "Count": 46}, {"year": 1966, "Type": "Total", "Count": 24}, {"year": 1967, "Type": "Total", "Count": 34}, {"year": 1968, "Type": "Total", "Count": 52}, {"year": 1969, "Type": "Total", "Count": 67}, {"year": 1970, "Type": "Total", "Count": 46}, {"year": 1971, "Type": "Total", "Count": 47}, {"year": 1972, "Type": "Total", "Count": 31}, {"year": 1973, "Type": "Total", "Count": 29}, {"year": 1974, "Type": "Total", "Count": 691}, {"year": 1975, "Type": "Total", "Count": 336}, {"year": 1976, "Type": "Total", "Count": 50}, {"year": 1977, "Type": "Total", "Count": 420}, {"year": 1978, "Type": "Total", "Count": 260}, {"year": 1979, "Type": "Total", "Count": 3045}, {"year": 1980, "Type": "Total", "Count": 143}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

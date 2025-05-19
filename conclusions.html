@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conclusions | Meteorite Landings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-title">Meteorite Landings Analysis</div>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="visualizations.html">Visualizations</a>
+      <a href="conclusions.html" class="active">Conclusions</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Findings</h2>
+    <p>
+   Our project set out to explore whether the founding of NASA in 1958 had 
+   a noticeable effect on the number of meteorite discoveries. The visualizations we created,
+    particularly the interactive and static plots showing meteorite landings over time, support this 
+    idea. Both charts show a clear increase in discoveries starting in the late 1950s and continuing in the 
+    decades that followed. This trend suggests that NASA’s creation may have led to increased scientific attention, better
+     research tools, and more systematic documentation of meteorites. In that sense, these time-based plots directly back up o
+     ur hypothesis by showing a strong correlation between NASA’s founding and the rise in recorded meteorite landings.
+  </p>
+  <p>
+    In contrast, the boxplot focuses on the mass of meteorites rather than 
+    how many were found. The data shows that meteorites of all sizes were discovered both before and after 1958, with no 
+    clear trend toward bigger or smaller ones. So, while we saw more discoveries overall, the range of sizes stayed pretty consistent over time.
+  </p>
+  <p>
+    The sunburst chart adds a different layer to the analysis by showing the classification of 
+    meteorites. It’s useful for understanding the types and structure of meteorite samples, but it 
+    doesn’t directly speak to the question of when or how often meteorites were discovered.
+  </p>
+  <p>
+    Overall, our findings suggest that the number of discoveries increased significantly after NASA 
+    was established, likely due to advancements in research and observation. While the boxplot and sunburst 
+    chart don’t directly prove that, they offer helpful context about what kinds of meteorites were being found during this time.
+  </p>
+
+    <h2>Limitations and Future Work</h2>
+    <p>One limitation of this project is that we were not able to use the full dataset because it 
+      is too big to process for our computers. Another limitation is that were were not able to put in a size
+       legend of the masses in the map because Plotly currently does not support this feature (<a href="https://github.com/plotly/plotly.py/issues/3505" target="_blank">GitHub Plotly issue</a>)      In the future, we could add buttons of meteorite types to our map plot to see which type of meteorites landed over time and see if they landed in a certain region. We could also plot the landings by meteorite types over time to see if it changes. In addition, we could create a boxplot of meteorite masses by type to see if it changed over time or to compare the mass distribution between meteorite types. We could also create machine learning models to predicit the type, mass, and location of future meteorite landings. This can help scientists and researchers better understand the characteristics of meteorites and their potential impact on Earth and how climate change could impact meteorite landings.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>Before the rise of modern space exploration and NASA’s involvement in meteorite tracking and analysis, knowledge of 
+      meteorites was limited primarily to anecdotal observations and sporadic documentation of falls. Historically, most meteorites 
+      were simply found after impact, rather than being observed during descent. This is clearly reflected in the bar chart, where the 
+      number of meteorites categorized as “Found” vastly outnumbers those marked as “Fell.” The challenge of spotting a meteorite fall in real time, 
+      combined with limited scientific awareness, meant that earlier discoveries were mostly accidental and lacked proper classification.
+
+      <br>
+      <br>
+
+      With NASA’s establishment in 1958 and subsequent technological advancements in space observation, tracking, and retrieval, 
+      our understanding of meteors improved drastically. Data became more structured, and methods for cataloging meteorites became standardized. 
+      The scatter plot demonstrates a dramatic increase in meteorite discoveries over time growing rapidly
+       around and after NASA’s formation. This spike isn't necessarily due to more meteorites falling but reflects improved detection, documentation, 
+       and exploration capabilities. 
+       
+       <br>
+       <br>
+       
+       Focusing on the period from 1940 to 1980, the line charts break down meteorite discoveries both by continent 
+       and by whether the meteor was found or observed falling. Notably, Antarctica saw a significant spike in found 
+       meteorites during the late 1970s, linked to greater scientific outreach and organized expeditions. 
+       Similarly, Found meteorites continue to dominate, but there’s a slight upward trend in “Fell” classifications, 
+       likely due to improved observation networks and increased public awareness of such phenomena over news stations and such.
+
+       <br>
+       <br>
+
+      In terms of physical characteristics, the box plot offers insight into how the masses of meteorites varied across decades. There’s a
+       noticeable shift in the 1970s and 1980s toward smaller meteorite discoveries, possibly because of refined tools that allowed detection of 
+       previously overlooked, lighter specimens. Earlier decades show heavier average masses, likely because only the largest and most 
+       conspicuous meteorites were discovered.
+
+       <br>
+       <br>
+
+      Together, these visualizations paint a clear narrative: the era before NASA was characterized by rare, 
+      mostly incidental meteorite findings, while the post-NASA period saw a surge in discoveries—both in quantity and quality of 
+      data—thanks to scientific advancement and dedicated space research.</p>
+  </main>
+</body>
+</html>

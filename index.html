@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Meteorite Landings</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-title {
+      text-align: center;
+      background-color: #2e3b4e;
+      color: white;
+      padding: 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-title">Meteorite Landings Analysis</div>
+  <header>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="visualizations.html">Visualizations</a>
+      <a href="conclusions.html">Conclusions</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <h2>Introduction</h2>
+
+    <h3>Background</h3>
+    <p>
+      Before the establishment of the National Aeronautics and Space Administration (NASA), meteor landings were primarily observed using a 
+      combination of the naked eye, telescopes, and other simple techniques that did not require advanced technology. With NASA's formation in 1958, 
+      this changed significantly, as meteor landings began to be monitored through various technologies, including radar, satellites, and artificial intelligence.
+       Technological advancements have enabled NASA to gather more accurate data points and information about meteor landings. In this project, our group aims to 
+       understand how known meteor landings differ before and after NASA's establishment. We seek to discover if and how advanced technologies have altered the 
+       observation and discovery of known meteor landings.
+
+       <br>
+       <br>
+
+       This research not only highlights the evolution of technology in space science but also helps assess how advancements
+        in data collection and observation have influenced the perceived frequency, distribution, and detection accuracy of meteor landings.
+    </p>
+
+    <h3>What are Meteors?</h3>
+    <p>
+      Meteors (commonly referred to as “shooting stars”) are caused 
+      by space debris entering Earth’s atmosphere. These objects, usually fragments of comets or asteroids,
+       burn up due to intense friction with the air. If a meteor survives its descent and lands on Earth, it is then classified as a meteorite. 
+       Studying these objects offers valuable insight into the early solar system and can help scientists assess potential future threats from space.
+
+    </p>
+
+    <h3>NASA's Milestones with Meteors</h3>
+    <p>
+        <b>1970s-1980s:</b> NASA began funding Antarctic expeditions<br>
+        <b>1990s:</b> NASA established programs to detect potentially hazardous asteroids<br>
+        <b>2010s:</b> The OSIRIS-REx mission launched<br>
+        <b>2022:</b> NASA made history with the DART mission
+    </p>
+
+    <h3>Why Meteors Matter</h3>
+    <p>
+      Studying meteors is crucial for scientists because it enhances our understanding of the history and composition of our solar system.
+       Meteors are fragments of asteroids or comets that enter Earth’s atmosphere. By analyzing these meteors, researchers can 
+       gain insights into the early conditions that shaped planets and other celestial bodies. Some meteorites contain materials that are
+        billions of years old, providing valuable clues about the formation of the solar system. Additionally, studying meteors helps us
+         understand potential threats from space, enabling us to develop strategies for detecting and possibly deflecting hazardous objects before 
+         they reach Earth. This research not only deepens our knowledge of the universe but also contributes to efforts in planetary defense.
+    </p>
+
+    <h3>The Future of Meteors</h3>
+    <p>
+      NASA continues to monitor the skies, track space rocks, and plan missions to asteroids that could hold important
+       scientific clues—or even pose potential threats to Earth. With advancements in telescope technology, AI-driven detection systems, 
+       and international collaborations, the future of meteor science looks promising. Upcoming missions aim to bring back more asteroid samples,
+        test planetary defense strategies, and deepen our understanding of how these objects have shaped—and continue to influence—our planet. 
+        As we collect more data and develop better tools, we’ll be able to predict, track, and study meteorites with more accuracy than ever before.
+    </p>
+
+    <h2>Data</h2>
+    <p>
+      We used a dataset provided by The Meteoritical Society and NASA, which includes 45,717 documented meteorite landings.
+    </p>
+    <ul>
+      <li><strong>Categorical features:</strong> name, nametype, recclass, fall</li>
+      <li><strong>Continuous features:</strong> id, mass (g), year, reclat, reclong, GeoLocation</li>
+    </ul>
+    <p>
+      This dataset is ideal for our research goal because it allows us to conduct a comparative analysis of meteors discovered both before and after NASA's formation. 
+      Research from Russia (Dudrov 2020, 233) indicates that meteors tend to fall within specific time frames, suggesting that they follow certain patterns. 
+      This means that after a certain number of years, there tends to be a significant influx of meteors.
+
+      In this analysis, we intend to investigate this phenomenon more deeply and determine how meteor landings have changed from before to after NASA's discovery. 
+      We will also examine whether there was a disproportionate number of meteors found during specific years in contrast to others as well as if they tended
+      to fall in specific areas during these times. 
+
+      <h3>Preprocessing</h3>
+      <p>
+        We cleaned this data set to only include meteorite landings from 1940-1980 so we could analyze the data before and after NASA was founded.
+        We also created a new column to map the meteorites classsifications (recclass) to their respective type. 
+        We referenced the American Museum of Natural History's meteorite classification for this information.
+    </p>
+
+    <h3>References</h3>
+    Data.gov. (2023, December 6). <em>Meteorite Landings</em>. Data.gov. 
+    <a href="https://catalog.data.gov/dataset/meteorite-landings" target="_blank">https://catalog.data.gov/dataset/meteorite-landings</a>
+    <br><br>
+    
+    Dudorov, A. & Eretnova, O. (2020). The Rate of Falls of Meteorites and Bolides. <em>Solar System Research</em>. 54. 223-235. 10.1134/S003809462003003X.
+    <br><br>
+    
+    e2eSA. "Meteorite Landings Visualization." <em>Medium</em>, Medium, 15 Feb. 2023, 
+    <a href="https://medium.com/@awstechguide/meteorite-landings-visualization-8e01c76ebdba" target="_blank">medium.com/@awstechguide/meteorite-landings-visualization-8e01c76ebdba</a>.
+    <br><br>
+    
+    Hecht, J. (2024, October 21). <em>We've Found the Source of Most Meteorites</em>. Sky & Telescope. Retrieved April 6, 2025, from 
+    <a href="https://skyandtelescope.org/astronomy-news/weve-found-the-source-of-most-meteorites/" target="_blank">https://skyandtelescope.org/astronomy-news/weve-found-the-source-of-most-meteorites/</a>
+    <br><br>
+    
+    <em>Iron meteorite | Meteorite Classification, Composition, Structure</em>. (2025, March 1). Britannica. Retrieved April 6, 2025, from 
+    <a href="https://www.britannica.com/science/iron-meteorite" target="_blank">https://www.britannica.com/science/iron-meteorite</a>
+    <br><br>
+    
+    "Macrometeorites." <em>Roxana Torre</em>, 2024, 
+    <a href="http://www.torre.nl/projects/macrometeorites/" target="_blank">www.torre.nl/projects/macrometeorites/</a>.
+    <br><br>
+    
+    <em>Meteorite Classification</em>. (n.d.). American Museum of Natural History. 
+    <a href="https://www.amnh.org/research/physical-sciences/earth-and-planetary-sciences/geology-collections/history-lists-meteorites-tektites-impactites/list-meteorites-type" target="_blank">https://www.amnh.org/research/physical-sciences/earth-and-planetary-sciences/geology-collections/history-lists-meteorites-tektites-impactites/list-meteorites-type</a>
+    <br><br>
+    
+    Spall, H. (1986). Meteoroids and impact craters. <em>Earthquakes and Volcanos</em>, <em>18</em>(2), 89. 
+    <a href="https://pubs.usgs.gov/publication/70168934" target="_blank">https://pubs.usgs.gov/publication/70168934</a>
+    
+    <h2>DS 4200 Project</h2>
+    <h3>Project Members</h3>
+    <ul>
+      <li>Tanishi Datta</li>
+      <li>Ayush Desai</li>
+      <li>Kaydence Lin</li>
+  </main>
+</body>
+</html>
